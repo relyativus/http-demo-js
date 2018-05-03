@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update song</title>
+    <link  href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+
+    <div class="row">
+        <div class="col-xs-8 offset-4" id="update-form">
+            <div class="alert alert-danger" id="error-container" style="display: none"></div>
+            <h3>Update song </h3>
+            <div id="fields-container"></div>
+            <div class="btn btn-success form-control" id="update-song">Update</div>
+        </div>
+    </div>
+    <script id="form-fields" type="application/text">
+        <input type="hidden" name="id" value="{{id}}" />
+        <div class="form-group">
+            <input placeholder="Track name" class="form-control" type="text" name="trackName" value="{{trackName}}"/>
+        </div>
+        <div class="form-group">
+            <input placeholder="Author" class="form-control" type="text" name="author" value="{{author}}"/>
+        </div>
+    </script>
+</div>
+<script src="/node_modules/jquery/dist/jquery.min.js" type="application/javascript"></script>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js" type="application/javascript"></script>
+<script src="/node_modules/mustache/mustache.min.js" type="application/javascript"></script>
+<script src="/app/update/update-song.js" type="application/javascript"></script>
+</body>
+</html>
