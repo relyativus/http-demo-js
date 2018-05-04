@@ -23,7 +23,7 @@ $(document).ready(function () {
     function handleCreateSuccess() {
         errorContainer.hide();
         alert('Song created successfully');
-        window.location = '/list/index.html'
+        window.location = '/app/list/index.html'
     }
 
     function handleCreateFailed(error) {
