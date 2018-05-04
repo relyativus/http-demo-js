@@ -28,7 +28,7 @@ $(document).ready(function () {
 
     function handleUpdateSuccess() {
         alert('Song updated!')
-        window.location = '/list/index.html';
+        window.location = '/app/list/index.html';
     }
 
     function showUpdateForm(data) {
